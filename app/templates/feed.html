@@ -1,0 +1,16 @@
+{% extends "dashboard.html" %}
+{% block title %} <title>Photogram</title>{% endblock%}
+{% block main %}
+<div id="photogram">
+
+    <dashboard-header></dashboard-header>
+
+    <dashboard-nav></dashboard-nav>
+    <main>
+        <!-- component matched by the route will render here -->
+        <router-view></router-view>
+    </main>
+    <dashboard-footer></dashboard-footer>
+</div>
+{% endblock %}
+
